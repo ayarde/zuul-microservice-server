@@ -43,7 +43,7 @@ public class PostElapsedTimeFilter extends ZuulFilter {
         Long  elapsedTime = finalTime - startTime;
 
         log.info(String.format("Elapsed Time in seconds %s seg.",elapsedTime.doubleValue()/100.00));
-        log.info(String.format("Elapsed Time in mileseconds %s ms.",elapsedTime));
+        log.info(String.format("Elapsed Time in milliseconds %s ms.",elapsedTime));
         return null;
     }
 }
